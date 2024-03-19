@@ -1,0 +1,8 @@
+x=open("binary_data.bin","rb")
+p=x.readlines()
+print(p)
+total=sum(int(p))
+x.close()
+y=open("binary_data.bin","wb")
+y.write(str(p))
+y.close()
